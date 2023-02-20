@@ -90,3 +90,31 @@ body {
   background-color: #ddd;
   cursor: not-allowed;
 }
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-container button {
+  width: 250px;
+  height: 44px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+.btn-salvar {
+  background-color: #0cd438;
+  border: 0;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.btn-limpar {
+  border: 2px solid #0cd438;
+  color: #0cd438;
+  margin-right: 10px;
+}
