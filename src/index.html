@@ -35,7 +35,7 @@
                 placeholder="CEP"
               />
             </div>
-            <div class="error-message">Campo requerido</div>
+            <div class="error-message" data-error="cep">Campo requerido</div>
             <div class="form-control">
               <label for="street">Logradouro:</label>
               <input
@@ -56,38 +56,43 @@
                 type="text"
                 placeholder="Numero"
               />
-              <div class="error-message">Campo requerido</div>
+              <div class="error-message" data-error="number">
+                Campo requerido
+              </div>
             </div>
             <div class="form-control">
-              <label for="cidade">Cidade:</label>
+              <label for="city">Cidade:</label>
               <input
                 class="form-input"
-                name="cidade"
-                id="cidade"
+                name="city"
+                id="city"
                 type="text"
                 placeholder="Cidade"
                 disabled
               />
             </div>
             <div class="btn-container">
-              <button class="btn-limpar">Limpar</button>
-              <button class="btn-salvar" type="submit">Salvar</button>
+              <button name="btnClear" class="btn-limpar">Limpar</button>
+              <button name="btnSave" class="btn-salvar" type="submit">
+                Salvar
+              </button>
             </div>
           </form>
         </div>
       </section>
-      <section id="list-section">
-        <div>
+      <section id="list-section" class="list-container">
+        <div class="card-list-item">
           <h3>Maranhao</h3>
-          <p>Travessa Santa Rita N:23</p>
-          <p>1234-5674</p>
+          <p class="address-line">Travessa Santa Rita N:23</p>
+          <p class="address-cep">1234-5674</p>
         </div>
-        <div>
+        <div class="card-list-item">
           <h3>Maranhao</h3>
-          <p>Travessa Santa Rita N:23</p>
-          <p>1234-5674</p>
+          <p class="address-line">Travessa Santa Rita N:23</p>
+          <p class="address-cep">1234-5674</p>
         </div>
       </section>
     </main>
+    <script type="module" src="./js/dsviacep.js"></script>
   </body>
 </html>
