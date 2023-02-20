@@ -15,45 +15,58 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="nav-container">
+      <nav class="nav-main">
         <h1>DSViaCep</h1>
-        <div>contato</div>
+        <div class="contact-link">contato</div>
       </nav>
     </header>
     <main>
-      <section id="form-section">
-        <div>
+      <section id="form-section" class="form-container">
+        <div class="card-form">
           <form name="newAddress">
-            <div>
+            <div class="form-control">
               <label for="cep">CEP:</label>
-              <input name="cep" id="cep" type="text" placeholder="CEP" />
+              <input
+                class="form-input"
+                name="cep"
+                id="cep"
+                type="text"
+                placeholder="CEP"
+              />
             </div>
-            <div>
+            <div class="error-message">Campo requerido</div>
+            <div class="form-control">
               <label for="street">Logradouro:</label>
               <input
+                class="form-input"
                 name="street"
                 id="street"
                 type="text"
                 placeholder="Logradouro"
+                disabled
               />
             </div>
-            <div>
+            <div class="form-control">
               <label for="number">Numero:</label>
               <input
+                class="form-input"
                 name="number"
                 id="number"
                 type="text"
                 placeholder="Numero"
               />
+              <div class="error-message">Campo requerido</div>
             </div>
-            <div>
+            <div class="form-control">
               <label for="cidade">Cidade:</label>
               <input
+                class="form-input"
                 name="cidade"
                 id="cidade"
                 type="text"
                 placeholder="Cidade"
+                disabled
               />
             </div>
             <div>
